@@ -1,0 +1,148 @@
+body {
+    margin: 0; /*外边距*/
+    padding: 0; /*内边距*/
+    }
+
+    /* Custom Cursor
+
+Change the code --> your image/gif */
+
+* {
+    cursor:url("../image/music64x64.png"), auto;
+  }
+
+.navbar {
+    z-index: 2; /*堆叠顺序*/
+    position: fixed; /*固定*/
+    display: block;
+    width: 100%; /*外边距*/
+    padding-top: 0.5vw; /*内边距*/
+    padding-bottom: 0.5vw; /*内边距*/
+    margin-top: 0; /*外边距*/
+    top: 0; /*外边距*/
+    }
+
+.background_gif{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url('../image/Musical_ascensio.gif') center center / cover no-repeat;
+    z-index: -1; /*堆叠顺序*/
+    }
+
+.navbar_content {
+    margin: 0; /*外边距*/
+    padding: 0; /*内边距*/
+    display: flex; /*弹性布局容器*/
+    
+    }
+
+.week_part{
+    display: grid;
+    place-items: center; /* 将内容居中对齐 */
+    flex-wrap: wrap; /*自动换行*/
+    margin: 0; /*外边距*/
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+}
+    
+    /* <h2> Text picture display */
+    @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+    @import url(https://fonts.googleapis.com/css?family=Fauna+One);
+    
+    /* 字体和图片部分调整样式 */
+    .sample {
+      font-family: 'Fauna One', Arial, sans-serif;
+      position: relative;
+      margin: 10px 20px;
+      min-width: 330px;
+      max-width: 395px;
+      min-height: 565px;
+      width: 100%;
+      color: #fff;
+      text-align: right;
+      line-height: 1.4em;
+      background-color: #1a1a1a;
+      font-size: 16px;
+    }
+    
+    .sample * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    
+    /* 图片部分调整样式 */
+    .sample img {
+      position: absolute;
+      right: 0%;
+      top: 50%;
+      opacity: 1;
+      width: 100%;
+      /* 移动的动画效果 */
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+    }
+    
+    .sample figcaption {
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 20px 0 20px 20px;
+    }
+    
+    /* 对于这两个标签先整体定义 */
+    .sample h2,
+    .sample p {
+      margin: 0;
+      width: 100%;
+      -webkit-transform: translateX(20px);
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    
+    /* <h2> 标签中的字体 */
+    .sample h2 {
+      font-family: 'Playfair Display', Arial, sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    
+    /* <p> 标签中的字体大小 */
+    .sample p {
+      font-size: 0.8em;
+    }
+    
+    .sample a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+    
+    /* 当鼠标移动到图片时，改变大小和位置，以及在 .hover 时固定这个状态 */
+    .sample:hover img,
+    .sample.hover img {
+      width: 55%;
+      right: -10%;
+    }
+    
+    .sample:hover figcaption h2,
+    .sample.hover figcaption h2,
+    .sample:hover figcaption p,
+    .sample.hover figcaption p {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    
+  
+    
+    
